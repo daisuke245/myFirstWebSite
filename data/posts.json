@@ -1,0 +1,17 @@
+posts = `[
+    {
+        "title": "Titulo 1",
+        "date": "asd",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam officiis, ratione. At deserunt cumque ullam, vitae temporibus possimus nobis maiores atque esse inventore sequi ab, molestiae, autem distinctio ipsum provident!"
+    },
+    {
+        "title": "Titulo 2",
+        "date": "asd",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam officiis, ratione. At deserunt cumque ullam, vitae temporibus possimus nobis maiores atque esse inventore sequi ab, molestiae, autem distinctio ipsum provident!"
+    },
+    {
+        "title": "Titulo 3",
+        "date": "asd",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam officiis, ratione. At deserunt cumque ullam, vitae temporibus possimus nobis maiores atque esse inventore sequi ab, molestiae, autem distinctio ipsum provident!"
+    }
+]`;

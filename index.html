@@ -5,9 +5,12 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="data/posts.json"></script>
     <script src="js/index.js"></script>
     
 </head>
@@ -46,18 +49,7 @@
         <!-- Contenido -->
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam officiis, ratione. At deserunt cumque ullam, vitae temporibus possimus nobis maiores atque esse inventore sequi ab, molestiae, autem distinctio ipsum provident!</p>
-                    <a href="#" class="button-more">Leer mas</a>
-                </article>
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam officiis, ratione. At deserunt cumque ullam, vitae temporibus possimus nobis maiores atque esse inventore sequi ab, molestiae, autem distinctio ipsum provident!</p>
-                    <a href="#" class="button-more">Leer mas</a>
-                </article>
+                <!-- Cargar los posts desde el archivo 'posts.json' -->
             </div>
             <aside id="sidebar">
                 <div id="about">
