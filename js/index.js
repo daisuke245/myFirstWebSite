@@ -3,12 +3,18 @@ $(document).ready(function(){
     const divPosts = $('#posts');
     const theme = $('#theme');
     
-    $('.bxslider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 1200, 
-        auto: true
-    });
+    if (window.location.href.indexOf('about') > -1){
+        $('#accordion').accordion();
+    }
+    
+    if (window.location.href.indexOf('index') > -1){
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 1200, 
+            auto: true
+        });
+    }
     
     $('.color-theme').click( (e)=>{
         switch (e.target.id){
@@ -61,4 +67,6 @@ $(document).ready(function(){
             location.reload();
         });
     }
+    
+    
 });

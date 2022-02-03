@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Document</title>
     
+    
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link id="theme" rel="stylesheet" href="css/green.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="data/posts.json"></script>
     <script src="js/index.js"></script>
     
@@ -35,7 +37,7 @@
             <nav id="menu">
                 <ul>
                     <li>
-                        <a href="#">INICIO</a>
+                        <a href="index.html">INICIO</a>
                         <a href="#">RELOJ</a>
                         <a href="about.html">SOBRE MI</a>
                         <a href="#">CONTACTO</a>
@@ -44,19 +46,25 @@
             </nav>
         </header>
         
-        <!-- Slider -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="/img/cielo.jpg" title="imagen"></div>
-                <div><img src="/img/hojas.jpg" title="imagen"></div>
-                <div><img src="/img/rojo.jpg" title="imagen"></div>
-            </div>
-        </div>
            
         <!-- Contenido -->
         <section id="content">
-            <div id="posts">
-                <!-- Cargar los posts desde el archivo 'posts.json' -->
+            <div id="box">
+                <!-- Cargar acordeon' -->
+                <div id="accordion">
+                    <h3>¿Quienes somos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tenetur doloribus, nam ratione consectetur accusantium architecto illo atque debitis, magni delectus inventore aut sequi mollitia labore? Ullam deleniti, consequatur sit.</p>
+                    </div>
+                    <h3>Nuestros Servicios</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tenetur doloribus, nam ratione consectetur accusantium architecto illo atque debitis, magni delectus inventore aut sequi mollitia labore? Ullam deleniti, consequatur sit.</p>
+                    </div>
+                    <h3>Nuestros Clientes</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tenetur doloribus, nam ratione consectetur accusantium architecto illo atque debitis, magni delectus inventore aut sequi mollitia labore? Ullam deleniti, consequatur sit.</p>
+                    </div>
+                </div>
             </div>
             <aside id="sidebar">
                 <div id="about">
