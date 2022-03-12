@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    const jsonPosts = JSON.parse(posts);
-    const divPosts = $('#posts');
+
     const theme = $('#theme');
     
     if (window.location.href.indexOf('about') > -1){
@@ -8,11 +7,24 @@ $(document).ready(function(){
     }
     
     if (window.location.href.indexOf('index') > -1){
+        const jsonPosts = JSON.parse(posts);
+        const divPosts = $('#posts');
         $('.bxslider').bxSlider({
             mode: 'fade',
             captions: true,
             slideWidth: 1200, 
             auto: true
+        });
+
+        jsonPosts.forEach((item, index) => {
+            item.date = moment().format('MMMM dddd YYYY');
+            let post = `<article class="post">
+                        <h2>${item.title}</h2>
+                        <span class="date">${item.date}</span>
+                        <p>${item.content}</p>
+                        <a href="#" class="button-more">Leer mas</a>
+                    </article>`
+            divPosts.append(post);
         });
     }
     
@@ -29,16 +41,7 @@ $(document).ready(function(){
         }
     });
     
-    jsonPosts.forEach((item, index) => {
-        item.date = moment().format('MMMM dddd YYYY');
-        let post = `<article class="post">
-                        <h2>${item.title}</h2>
-                        <span class="date">${item.date}</span>
-                        <p>${item.content}</p>
-                        <a href="#" class="button-more">Leer mas</a>
-                    </article>`
-        divPosts.append(post);
-    });
+
     
     $('.subir').click(function(e){
         e.preventDefault();
@@ -76,5 +79,13 @@ $(document).ready(function(){
         },1000);
     }
     
-    
+    if (window.location.href.indexOf('contact') > -1){
+        $("form input[name='date']").datepicker({
+            dateFormat: 'dd-mm-yy'
+        });
+
+        $.validate({
+            lang: 'es'
+        });
+    }
 });
